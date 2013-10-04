@@ -1,0 +1,41 @@
+[user]
+	name = Pierrick
+	email = mulotmail@gmail.com
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	unadd = reset HEAD
+	oups = commit --amend -C HEAD
+	create-branch = "!bash -c \"[[ $# = 1 ]] || echo Missing argument: new branch name && git push origin HEAD:$1 && git checkout -b $1 origin/$1\""
+[giggle]
+	main-window-maximized = true
+	main-window-geometry = 863x580+1923+48
+	main-window-view = FileView
+	history-view-vpane-position = 450
+	file-view-vpane-position = 483
+[core]
+	quotepath = off
+	editor = nano
+[push]
+	default = current
+[color]
+    ui = always
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+    meta = cyan
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[pull]
+	rebase = true
+[branch]
+    rebase = true
+[rerere]
+    enabled = 1
+[github]
+    user = PierrickP
+[credential]
+	helper = cache
